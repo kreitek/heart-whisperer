@@ -93,6 +93,10 @@ def animate(i):
                 ymaxar.append(0)
                 pass  # rint "Error", e
 
+    if len(tminar) == 0:
+        tminar, tmaxar = [0], [0]
+        yminar, ymaxar = [0], [0]
+
     # Filtramos los ultimos 10 segundos
     last = max(tminar[-1], tmaxar[-1])
     prev = min(tminar[-1], tmaxar[-1])
